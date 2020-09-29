@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "BreakoutRoom4_Bab7"
