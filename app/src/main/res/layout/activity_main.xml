@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_marginStart="8dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_marginStart="8dp"
@@ -28,10 +28,10 @@
         android:hint="Nomor Induk Mahasiswa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_marginStart="8dp"
@@ -55,12 +55,14 @@
         app:layout_constraintTop_toBottomOf="@+id/editText3">
 
         <RadioButton
+            android:id="@+id/LakiLaki"
             android:layout_width="200dp"
             android:layout_height="75dp"
             android:text="Laki Laki" />
 
 
         <RadioButton
+            android:id="@+id/Perempuan"
             android:layout_width="200dp"
             android:layout_height="75dp"
             android:text="Perempuan" />
@@ -68,8 +70,9 @@
     </RadioGroup>
 
     <Spinner
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -78,15 +81,16 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="160dp"
         android:text="Simpan Data"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
